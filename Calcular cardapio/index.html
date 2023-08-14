@@ -1,0 +1,76 @@
+Peço desculpas pelo erro. Parece que houve um equívoco na maneira como o valor associado a cada checkbox é lido. O código precisa ser ajustado para ler corretamente os valores dos checkboxes. Aqui está a versão corrigida do código:
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixa de lanchonete</title>
+</head>
+<body>
+    <h1>Cardápio</h1>
+    <ul>
+        <input type="checkbox" id="cafe" value="cafe"> Café_valor: 3,00 <br>
+        <input type="checkbox" id="chantily" value="chantily"> Chantily(extra)_valor: 1,50 <br>
+        <input type="checkbox" id="suco" value="suco"> Suco_valor: 6,20 <br>
+        <input type="checkbox" id="sanduiche" value="sanduiche"> Sanduiche_valor: 6,50 <br>
+        <input type="checkbox" id="queijo" value="queijo"> Queijo(extra)_valor: 2,00 <br>
+        <input type="checkbox" id="salgado" value="salgado"> Salgado_valor: 7,25 <br>
+        <input type="checkbox" id="combo1" value="combo1"> Combo1(1 Suco e 1 Sanduíche)valor: 9,50 <br>
+        <input type="checkbox" id="combo2" value="combo2"> Combo2(1 Café e 1 Sanduíche)_valor: 7,50 <br>
+    </ul>
+    <button id="calculate-btn">Calcular Valor Total</button>
+    <p>Total: <span id="total">0.00</span></p>
+    <h3>Escolha a forma de pagamento</h3>
+    <input type="checkbox"> Cartão 
+    <input type="checkbox"> Dinheiro <br>
+    <style>
+        h1{
+            background-color: rgb(158, 141, 173);
+            width: 386px;
+            text-align: ;
+        }
+        ul{
+            background-color: rgb(158, 141, 173);
+            width: 350px;
+        }
+    </style>
+    <script>
+        var valores = {
+            cafe: 3.00,
+            chantily: 1.50,
+            suco: 6.20,
+            sanduiche: 6.50,
+            queijo: 2.00,
+            salgado: 7.25,
+            combo1: 9.50,
+            combo2: 7.50
+        };
+
+        var calculateButton = document.getElementById("calculate-btn");
+        var totalSpan = document.getElementById("total");
+
+        calculateButton.addEventListener("click", function() {
+            var total = 0;
+
+            // Seleciona todos os checkboxes marcados
+            var checkboxes = document.querySelectorAll("input[type=checkbox]:checked");
+
+            // Itera sobre os checkboxes marcados e soma os valores correspondentes
+            for (var i = 0; i < checkboxes.length; i++) {
+                var checkbox = checkboxes[i];
+                var value = checkbox.getAttribute("value");
+                total += valores[value];
+            }
+
+            // Atualiza o valor total na página
+            totalSpan.textContent = total.toFixed(2);
+        });
+    </script>
+</body>
+</html>
+```
+
+
+
