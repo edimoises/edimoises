@@ -1,5 +1,5 @@
 ## Olá! Eu sou a Edinava
-👨‍🎓 Cursando o segundo período de Análise e desenvolvimento de sistemas pela UNINASSAU
+👨‍🎓 Cursando o segundo período em Análise e desenvolvimento de sistemas pela UNINASSAU
 
 📖 Atualmente estudando Html, CSS e JavaScript
 
