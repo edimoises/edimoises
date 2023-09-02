@@ -1,7 +1,9 @@
+## Olá! Eu sou a Edinava
+👨‍🎓 Cursando o segundo período de Análise e desenvolvimento de sistemas pela UNINASS
 
-- 🌱 Atualmente estou aprendendo...
+📖 Atualmente estudando Html, CSS e JavaScript
 
-<!---
-edimoises/edimoises is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+📩 Contate-me no emial: nalvamoises2@hotmail.com
+
+👧 Pronouns:Ela/dela
+
