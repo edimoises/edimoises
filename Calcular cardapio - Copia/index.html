@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixa da Lanchonete</title>
+</head>
+<body>
+    <table border="3" bordercolor="Blue">
+        <td>
+    <h1>Lanchonete da Nalva</h1>
+    <h2>Cardápio</h2>
+    <!-- Criando uma lista ordenada com os valorea para cardápio/ strong: deixar em negrito-->
+    <ul>
+        <li><strong>Hamburguer</strong> - R$ 10,00</li>
+        <li><strong>Refrigerante</strong> - R$ 5,00</li>
+        <li><strong>Batata Frita</strong> - R$ 7,00</li>
+    </ul>
+
+    <!--Selecione aqui os itens escolhidos-->
+    <h2>Selecione os itens comprados</h2>
+    <input type="checkbox" id="hamburguer">Hamburguer <br>
+    <input type="checkbox" id="refrigerante">Refrigerante <br>
+    <input type="checkbox" id="batataFrita">Batata frita <br>
+    <h2>Selecione o tipo de pagamento</h2>
+    <input type="radio" id="Dinheiro" name="pagamento">Dinheiro
+    <input type="radio" id="Débito" name="pagamento">Débito
+    <input type="radio" id="Crédito" name="pagamento">Crédito <br>
+     <!--Criando botão e trazendo a funcionalidade-->
+
+     <button onclick="calcularTotal()">Calcular Total</button>
+
+     <div id="resultado"></div>
+    <script>
+        function calcularTotal() {
+            var total = 0;
+            var precoHamburguer = 10.00;
+            var precoRefrigerante = 5.00;
+            var precoBatataFrita = 7.00;
+            var Dinheiro = total
+            var Crédito = total *= 0.97
+            //verificando se as caixas selecionadas correspondem aos Id's//
+        
+            var hamburguerSelecionado = document.getElementById("hamburguer").checked;
+            var refrigeranteSelecionado = document.getElementById("refrigerante").checked;
+            var batataFritaSelecionada = document.getElementById("batataFrita").checked;
+            var DinheiroSelecionado = document.getElementById("Dinheiro").checked;
+            var DébitoSelecionado = document.getElementById("Débito").checked;
+            var CréditoSelecionado = document.getElementById("Crédito").checked;
+            //Regra para calcular o valor da compra//
+            if (hamburguerSelecionado) {
+                total += precoHamburguer;
+                }
+                 if (refrigeranteSelecionado) {
+                total += precoRefrigerante;
+                 }
+                 if (batataFritaSelecionada) {
+                     total += precoBatataFrita;
+                 }
+                //Verificando a forma de pagamento//
+                var formaPagamento = document.querySelector('input[name="pagamento"]:checked');
+
+                if (DinheiroSelecionado) {
+                 // Aplicando desconto de 3% para pagamento em dinheiro
+                 total *= 0.97;
+                }
+            var resultadoElement = document.getElementById("resultado")
+            resultadoElement.innerHTML = "Total a pagar: R$ " + total.toFixed(2);
+        }
+    </script>
+    </td>
+</table>
+    </body>
+</html>
