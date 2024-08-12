@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARDAPIO E.M Burg</title>
+    <style>
+        body{
+            background-color: darkviolet;
+        }
+        .Tradicional{
+    border: 2px solid #333; /* Borda ao redor do bloco */
+    padding: 15px; /* Espaço interno */
+    margin: 20px auto; /* Espaço externo e centralização */
+    width: 300px; /* Largura do bloco */
+    text-align: center; /* Centraliza o texto */
+    background-color: #f9f9f9; /* Cor de fundo do bloco */
+    border-radius: 10px; /* Bordas arredondadas */
+        }
+        .casa {
+    border: 2px solid #333; /* Borda ao redor do bloco */
+    padding: 15px; /* Espaço interno */
+    margin: 20px auto; /* Espaço externo e centralização */
+    width: 300px; /* Largura do bloco */
+    text-align: center; /* Centraliza o texto */
+    background-color: #f9f9f9; /* Cor de fundo do bloco */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+.calabresa {
+    border: 2px solid #333; /* Borda ao redor do bloco */
+    padding: 15px; /* Espaço interno */
+    margin: 20px auto; /* Espaço externo e centralização */
+    width: 300px; /* Largura do bloco */
+    text-align: center; /* Centraliza o texto */
+    background-color: #f9f9f9; /* Cor de fundo do bloco */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+.frango {
+    border: 2px solid #333; /* Borda ao redor do bloco */
+    padding: 15px; /* Espaço interno */
+    margin: 20px auto; /* Espaço externo e centralização */
+    width: 300px; /* Largura do bloco */
+    text-align: center; /* Centraliza o texto */
+    background-color: #f9f9f9; /* Cor de fundo do bloco */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+.bacon {
+    border: 2px solid #333; /* Borda ao redor do bloco */
+    padding: 15px; /* Espaço interno */
+    margin: 20px auto; /* Espaço externo e centralização */
+    width: 300px; /* Largura do bloco */
+    text-align: center; /* Centraliza o texto */
+    background-color: #f9f9f9; /* Cor de fundo do bloco */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+.tudo {
+    border: 2px solid #333; /* Borda ao redor do bloco */
+    padding: 15px; /* Espaço interno */
+    margin: 20px auto; /* Espaço externo e centralização */
+    width: 300px; /* Largura do bloco */
+    text-align: center; /* Centraliza o texto */
+    background-color: #f9f9f9; /* Cor de fundo do bloco */
+    border-radius: 10px; /* Bordas arredondadas */
+}       
+.container1{
+    display: flex; /* Define um container flexível */
+    justify-content: space-between; /* Espaça os blocos igualmente */
+    gap: 20px; /* Espaçamento entre os blocos */
+}
+.container2{
+    display: flex; /* Define um container flexível */
+    justify-content: space-between; /* Espaça os blocos igualmente */
+    gap: 20px; /* Espaçamento entre os blocos */
+}
+.tituloburg{
+    text-align: center; /* Centraliza o texto */
+    font-size: 32px; /* Ajusta o tamanho da fonte */
+    color:#f9f9f9; /* Define a cor do texto */
+    margin: 20px 0; /* Adiciona espaço acima e abaixo do título */
+}
+.titulopedidos{
+    text-align: center; /* Centraliza o texto */
+    font-size: 20px; /* Ajusta o tamanho da fonte */
+    color:#f9f9f9; /* Define a cor do texto */
+}
+.finalizar{
+    text-align: center; /* Centraliza o texto */
+    font-size: 20px; /* Ajusta o tamanho da fonte */
+    color:#f9f9f9; /* Define a cor do texto */
+}
+.container3{
+    
+    justify-content: space-between; /* Espaça os blocos igualmente */
+    gap: 20px; /* Espaçamento entre os blocos */
+    padding: 15px; /* Espaço interno do container */
+    color: #f9f9f9;
+    
+}
+.gerencionamentodepedidos{
+    justify-content: space-between; /* Espaça os blocos igualmente */
+    gap: 20px; /* Espaçamento entre os blocos */
+    padding: 15px; /* Espaço interno do container */
+    color: #f9f9f9;
+}
+
+.container4{
+    
+    justify-content: space-between; /* Espaça os blocos igualmente */
+    gap: 20px; /* Espaçamento entre os blocos */
+    padding: 15px; /* Espaço interno do container */
+    color: #f9f9f9;
+    
+}
+
+.pedidos{
+    
+    justify-content: space-between; /* Espaça os blocos igualmente */
+    gap: 20px; /* Espaçamento entre os blocos */
+    padding: 15px; /* Espaço interno do container */
+    border: 1px solid #f9f9f9; /* Borda ao redor do container */
+   color: #f9f9f9;
+    border-radius: 10px; /* Bordas arredondadas do container */
+}
+.pedidos {
+    display: flex;
+    gap: 20px; /* Ajuste o espaçamento entre as divs conforme necessário */
+}
+
+.container3, .container4, .container5, .container6 {
+    flex: 1; /* As divs irão ocupar espaços iguais */
+}
+input[type="text"] {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: none;
+    text-align: center;
+    font-size: 20px;
+    margin: 0 5px;
+    outline: none;
+    color: #f9f9f9;
+}
+button {
+    width: 20px;
+    height: 20px;
+    border: 1px solid white; /* Borda branca */
+    border-radius: 60%; /* Faz o botão ser circular */
+    background: none; /* Remove a cor de fundo */
+    font-size: 20px;
+    line-height: 1;
+    text-align: center;
+    cursor: pointer;
+    padding: 0;
+    color: #f9f9f9;
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="tituloburg">
+    <h1>CARDÁPIO E.M BURG</h1>
+</div>
+
+<form action="#" method="post">
+    <a href="pedidos.html">
+        <input type="button" value="Faça seu pedido">
+    </a>
+    </form>
+<br>
+
+<div class="container1">
+    <div class="Tradicional"> 
+    <h3>Tradicional</h3>
+    <p>Carne artesanal, queijo, ovo, <br>salada e molho especial</p>
+   <img src="tradicionalcatalogo.JPG" alt="">
+   
+</div>
+
+
+<div class="casa">
+    <h3>Da casa</h3>
+    <p>Carne artesanal, queijo,<br>salada e molho especial</p>
+    <img src="da casacatalogo.JPG" alt="">
+</div>
+
+<div class="calabresa">
+    <h3>Calabresa</h3>
+    <p>Carne artesanal, queijo, calabresa, <br>salada e molho especial</p>
+    <img src="calabresa cat.JPG" alt="">
+</div>
+
+</div>
+<div class="container2">
+<div class="frango">
+    <h3>Frango</h3>
+    <p>Carne artesanal, queijo, frango,<br> salada e molho especial</p>
+    <img src="Frangocatalogo.JPG" alt="">
+</div>
+
+<div class="bacon">
+    <h3>Bacon</h3>
+    <p>Carne artesanal, queijo, bacon,<br>salada e molho especial</p>
+    <img src="baconcatlogo.JPG" alt="">
+</div>
+
+<div class="tudo">
+    <h3>Tudão</h3>
+    <p>Carne artesanal, queijo, ovo, calabresa, <br>frango, bacon, salada e molho especial</p>
+    <img src="Tudocatalogo.JPG" alt="">
+</div>
+</div>
+
+ 
+</body>
+</html>

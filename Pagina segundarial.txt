@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faça seu pedido</title>
+</head>
+<style>
+    body{
+            background-color: rgb(148, 0, 211);
+            color: white;
+        }
+        
+    .button{
+        width: 150px; /* Ajuste a largura conforme necessário */
+        padding: 10px; /* Ajuste o espaço interno do botão */
+        font-size: 14px; /* Ajuste o tamanho do texto dentro do botão */
+    }
+    input[type="text"] {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: none;
+    text-align: center;
+    font-size: 20px;
+    margin: 0 5px;
+    outline: none;
+    color: white;
+}
+.container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px; /* Espaço entre os blocos */
+            flex-wrap: wrap; /* Permite a quebra de linha se não houver espaço suficiente */
+            border: 1px solid #ccc; /* Borda opcional para visualização */
+        }
+        .hamburg, .bebidas, .acai {
+            flex: 1;
+            min-width: 250px; /* Largura mínima para cada bloco */
+            padding: 10px; /* Espaçamento interno */
+            
+        }
+        
+        .containercarrinho {
+            display:flex;
+            justify-content: space-between;
+            gap: 20px; /* Espaço entre os blocos */
+            flex-wrap: wrap; /* Permite a quebra de linha se não houver espaço suficiente */
+            border: 1px solid #ccc; /* Borda opcional para visualização */
+            
+            
+        }
+        .cart, .pag, .order-summary {
+            flex: 10;
+            min-width: 250px; /* Largura mínima para cada bloco */
+            padding: 10px; /* Espaçamento interno */
+        }
+        .order-summary {
+ 
+    padding: 10px; /* Espaçamento interno reduzido */
+    border-radius: 8px; /* Borda arredondada */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    direction: ltr; /* Garante a direção da leitura da esquerda para a direita */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+.order-summary h2 {
+    margin-bottom: 10px; /* Espaçamento abaixo do cabeçalho */
+}
+
+.order-summary p {
+    margin-bottom: 5px; /* Reduz o espaçamento entre os parágrafos */
+}
+
+.order-summary input[type="text"] {
+    width: 100%; /* Largura total para os campos de texto */
+    padding: 8px; /* Padding interno dos campos de texto */
+    border-radius: 4px; /* Borda arredondada */
+
+    box-sizing: border-box; /* Inclui o padding e border na largura total */
+}
+</style>
+<body>
+
+<br>
+
+    <form action="#" method="post">
+        <a href="index.html">
+            <input type="button" value="Voltar">
+        </a>
+        </form>
+        
+        <br>
+   
+ 
+    <div class="container">
+        <div class="hamburg">
+            <h2>HAMBURGUER</h2>
+                <p><input type="checkbox" id="burger1">
+                <label for="burger1">Tradicional..... R$ 14,00 </label>
+                <input type="number" min="1" value="1" placeholder="Quantidade"></p>
+
+                <p><input type="checkbox" id="burger1">
+                <label for="burger1">Da Casa...........R$ 11,00 </label>
+                <input type="number" min="1" value="1" placeholder="Quantidade"></p>
+    
+                <p><input type="checkbox" id="burger1">
+                <label for="burger1">Da Casa...........R$ 11,00
+                <input type="number" min="1" value="1" placeholder="Quantidade"></p>
+
+                <p><input type="checkbox" id="burger1">
+                <label for="burger1">Calaresa  ..........R$ 15,00
+                <input type="number" min="1" value="1" placeholder="Quantidade"></p>
+
+                <p><input type="checkbox" id="burger1">
+                <label for="burger1">Frango  ............R$ 15,00
+                <input type="number" min="1" value="1" placeholder="Quantidade"></p>
+
+                <p><input type="checkbox" id="burger1">
+                <label for="burger1">Bacon .............R$ 15,00
+                <input type="number" min="1" value="1" placeholder="Quantidade"></p>
+
+                <p><input type="checkbox" id="burger1">
+                <label for="burger1">Tudão  .............R$ 15,00
+                <input type="number" min="1" value="1" placeholder="Quantidade"></p>
+ </div>
+
+    <br>
+    <div class="bebidas">
+    <h2>BEBIDAS</h2>
+            <p><input type="checkbox" id="bebidas1">
+            <label for="burger1">Refrigerante 350 ml ...R$ 5,00
+            <input type="number" min="1" value="1" placeholder="Quantidade"></p>
+
+             <p><input type="checkbox" id="burger1">
+            <label for="burger1">Soco lata 350 ml ........R$ 7,00
+            <input type="number" min="1" value="1" placeholder="Quantidade"></p>
+</div>
+
+    <br>
+    <div class="acai">
+    <h2>AÇAÍ</h2>
+        <p><input type="checkbox" id="burger1">
+        <label for="burger1">Açaí na tigela 300ml...R$ 13,00
+        <input type="number" min="1" value="1" placeholder="Quantidade"></p>
+
+        <p><input type="checkbox" id="burger1">
+        <label for="burger1">Açaí na tigela 500ml...R$ 16,00
+        <input type="number" min="1" value="1" placeholder="Quantidade"></p>
+
+        <p><input type="checkbox" id="burger1">
+        <label for="burger1">Açaí na tilgela 700ml..R$ 20,00
+        <input type="number" min="1" value="1" placeholder="Quantidade"></p>
+    </div>
+</div>
+    <br>
+ 
+        <div class="containercarrinho">
+            
+            <div class="cart">
+                <h2>CARRINHO</h2>
+                <div class="cart-item">
+                    <span>Tradicional................(x2)</span>
+                    <span>R$ 28,00</span>
+                </div>
+                <div class="cart-item">
+                    <span>Da Casa ....................(x1)</span>
+                    <span>R$ 11,00</span>
+                </div>
+                <div class="cart-item">
+                    <span>Refrigerante 350 ml .(x3)</span>
+                    <span>R$ 15,00</span>
+                </div>
+                <div class="cart-item">
+                    <span>Açaí na tigela 500ml (x1)</span>
+                    <span>R$ 16,00</span>
+                </div>
+                <p><strong>Total: R$ 70,00</strong></p>
+    </div>
+
+    
+    <div class="pag">
+        <h2>FORMA DE PAGAMENTO</h2>
+    <input type="radio" name="Cartão" value="Cartão">
+    <label for="cartao">Cartão - Debito ou Crédito</label> <br>
+    <input type="radio" name="Cartão" value="Cartão">
+    <label for="Dinheiro">Dinheiro</label><br>
+    <input type="radio" name="Cartão" value="Cartão">
+    <label for="pix"> Pix</label>
+</div>
+
+
+<div class="order-summary">
+    <h2>DADOS PARA ENTREGA</h2>
+    Nome Completo: <input type="text" placeholder="Seu nome completo"> <br>
+    Endereço de Entrega: <input type="text" placeholder="Seu endereço"><br>
+    Telefone: <input type="text" placeholder="Seu telefone">
+</div>
+</div>
+        <button>Confirmar Pedido</button>
+        <button>Cancelar Pedido</button>
+    </div>
+
+    
+</body>
+</html>
