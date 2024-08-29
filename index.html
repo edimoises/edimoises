@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio Digital Interativo</title>
+</head>
+<body>
+
+    <!-- Apresentação do Cardápio -->
+    <h1>Cardápio</h1>
+
+    <!-- Categoria: Hambúrgueres -->
+    <h2>Hambúrgueres</h2>
+    <div>
+        <input type="checkbox" id="burger1" name="burger1">
+        <label for="burger1">Cheeseburger - Delicioso hambúrguer com queijo - R$ 15,00</label>
+        <br>
+        <label for="quantity1">Quantidade:</label>
+        <input type="number" id="quantity1" name="quantity1" min="1" value="1">
+    </div>
+    <div>
+        <input type="checkbox" id="burger2" name="burger2">
+        <label for="burger2">Bacon Burger - Hambúrguer com bacon crocante - R$ 18,00</label>
+        <br>
+        <label for="quantity2">Quantidade:</label>
+        <input type="number" id="quantity2" name="quantity2" min="1" value="1">
+    </div>
+
+    <!-- Categoria: Salgados -->
+    <h2>Salgados</h2>
+    <div>
+        <input type="checkbox" id="salgado1" name="salgado1">
+        <label for="salgado1">Coxinha - Coxinha de frango - R$ 5,00</label>
+        <br>
+        <label for="quantity3">Quantidade:</label>
+        <input type="number" id="quantity3" name="quantity3" min="1" value="1">
+    </div>
+    <div>
+        <input type="checkbox" id="salgado2" name="salgado2">
+        <label for="salgado2">Empada - Empada de camarão - R$ 6,00</label>
+        <br>
+        <label for="quantity4">Quantidade:</label>
+        <input type="number" id="quantity4" name="quantity4" min="1" value="1">
+    </div>
+
+    <!-- Categoria: Bebidas -->
+    <h2>Bebidas</h2>
+    <div>
+        <input type="checkbox" id="bebida1" name="bebida1">
+        <label for="bebida1">Refrigerante - 350ml - R$ 4,00</label>
+        <br>
+        <label for="quantity5">Quantidade:</label>
+        <input type="number" id="quantity5" name="quantity5" min="1" value="1">
+    </div>
+    <div>
+        <input type="checkbox" id="bebida2" name="bebida2">
+        <label for="bebida2">Suco Natural - 300ml - R$ 7,00</label>
+        <br>
+        <label for="quantity6">Quantidade:</label>
+        <input type="number" id="quantity6" name="quantity6" min="1" value="1">
+    </div>
+
+    <!-- Gerenciamento do Pedido -->
+    <h2>Carrinho de Compras</h2>
+    <div id="carrinho">
+        <!-- Os itens selecionados serão exibidos aqui -->
+        <p>Seu carrinho está vazio.</p>
+    </div>
+
+    <!-- Finalização do Pedido -->
+    <h2>Finalização do Pedido</h2>
+    <form>
+        <h3>Opções de Pagamento</h3>
+        <input type="radio" id="cartao" name="pagamento" value="cartao" checked>
+        <label for="cartao">Cartão (Débito ou Crédito)</label>
+        <br>
+        <input type="radio" id="pix" name="pagamento" value="pix">
+        <label for="pix">Pix</label>
+
+        <h3>Dados para Entrega</h3>
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" name="nome">
+        <br>
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" name="endereco">
+
+        <h3>Resumo do Pedido</h3>
+        <div id="resumo">
+            <!-- O resumo do pedido será exibido aqui -->
+            <p>Nenhum item selecionado.</p>
+        </div>
+
+        <button type="submit">Confirmar Pedido</button>
+        <button type="reset">Cancelar Pedido</button>
+    </form>
+
+</body>
+</html>
